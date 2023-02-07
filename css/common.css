@@ -25,22 +25,22 @@
 #header #nav .depth1 { 
     position: absolute; top: 30%; right: 10%;
 }
-#header .depth1 > li { float: left; position: relative; border-left: 1px solid #000; padding: 0 5px;}
+#header .depth1 > li { float: left; position: relative; border-left: 1px solid #000; padding: 0 23px;}
 #header .depth1 > li:nth-child(1) { border-left: none;}
 #hwader .depth1 > li > a { 
     display: inline-block;
 }
 #header #nav .depth2 { 
     display: none; text-align: center; padding: 20px 0; 
-    color: #fff;
+    color: rgb(0, 0, 0);
     z-index: 99999;
-    position: absolute;
+    position: absolute; left: -5%;
     /* z-index:;를 적용하려면 포지션을 함께 써야한다. */
 }
-#header #nav li:hover .depth2 { display: block; width: 100px; }
+#header #nav li:hover .depth2 { display: block; width: 90px; }
 #header #nav .depth2 > li {
-    background: #000; padding: 20px 0; opacity: 0.7;
+    background: rgb(255, 255, 255); padding: 20px 0; opacity: 0.5;
 }
 #header #nav .depth2 > li:hover {
-    background: rgb(240, 240, 240); color: #000; opacity: 1;
+    background: rgb(46, 46, 46); color: rgb(255, 255, 255); opacity: 1;
 }
