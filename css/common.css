@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+#header .top {
+    max-width: 100%; margin: 0 auto; padding: 0; 
+    background: #000;
+    text-align: right;
+    font-size: 12px; color: #fff;
+    position: relative;
+    z-index: 99999;
+}
+#header .logo { 
+    padding: 10px 50px; display: inline-block;
+}
+#header a { padding: 5px; }
+
+/* 네비게이션 */
+#header .open { display: none; }
+#header .close { display: none; }
+#header .row { 
+    width: 100%; height: 50px;
+    background: rgb(250, 250, 250);
+    font-size: 15px; 
+    position: relative;
+}
+#header #nav .depth1 { 
+    position: absolute; top: 30%; right: 10%;
+}
+#header .depth1 > li { float: left; position: relative; border-left: 1px solid #000; padding: 0 5px;}
+#header .depth1 > li:nth-child(1) { border-left: none;}
+#hwader .depth1 > li > a { 
+    display: inline-block;
+}
+#header #nav .depth2 { 
+    display: none; text-align: center; padding: 20px 0; 
+    color: #fff;
+    z-index: 99999;
+    position: absolute;
+    /* z-index:;를 적용하려면 포지션을 함께 써야한다. */
+}
+#header #nav li:hover .depth2 { display: block; width: 100px; }
+#header #nav .depth2 > li {
+    background: #000; padding: 20px 0; opacity: 0.7;
+}
+#header #nav .depth2 > li:hover {
+    background: rgb(240, 240, 240); color: #000; opacity: 1;
+}
