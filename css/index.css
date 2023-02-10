@@ -50,4 +50,12 @@
 }
 .article1 .slick-dots li.slick-active button { background-color: #fff; }
 
-
+.article2 {
+    margin-top: 100px;
+}
+.article2 .colb {
+    border: 1px solid #000;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
