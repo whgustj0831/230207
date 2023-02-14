@@ -2,23 +2,23 @@
 
 @media screen and (max-width: 750px) {
 
-    #header .row { position: relative; }
+    #header .row { position: relative; overflow: hidden;}
 
     #header .open { 
         display: block; 
-        position:absolute; top: 20%;
+        position:absolute; top: 53%;
         right: 5%; font-size: 23px; color: #000;
         z-index: 999;
         cursor: pointer;
     }
     #header .row .open.on { display:none; }
     #header .close { display:block; 
-        position:fixed; top: 33px; right:-50px;
+        position:fixed; top: 40px; right:-50px;
         font-size:30px; z-index:9999999;
         transition:all 0.5s;
         cursor: pointer;
     }
-    #header.on .close { right: 20px; }
+    #header.on .close { right: 27px; }
 
     #header .row #nav {
         position:fixed; 
