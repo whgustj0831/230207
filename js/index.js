@@ -1,3 +1,28 @@
+var ww = $(window).width()
+if (ww>700) {
+    $('html').addClass('pc')
+} else {
+    $('html').addClass('mobile')
+}
+
+$('#header #nav .depth1 > li').on('mouseover', function(){
+    if ( $('html').hasClass('pc') ) {
+        $(this).find('.depth2').stop().slideDown()
+    }
+})
+$('#header #nav .depth1 > li').on('mouseout', function(){
+    if ( $('html').hasClass('pc') ) {
+        $(this).find('.depth2').stop().slideUp()
+    }
+})
+$('#header .open').on('click', function(){
+    $(this).parents('#header').addClass('on')
+})
+
+$('#header .close').on('click', function(){
+    $(this).parents('#header').removeClass('on')
+})
+
 $('.article1 .slide_group').slick({
     autoplay:true,
     autoplaySpeed:3000,
@@ -23,6 +48,5 @@ $('.slide_group1').slick({
      }]
 })
 
-// 네비 애니메이션 .on으로 호버 바꾸기
 // 스크롤 이벤트(애니메)
 // 팝업(...)

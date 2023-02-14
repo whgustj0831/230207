@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 body { overflow-x: hidden; }
+#header { max-width: 3000px; }
 #header .top {
     width: 100%; margin: 0 auto; padding: 0; 
     background: #000;
@@ -32,13 +33,14 @@ body { overflow-x: hidden; }
     display: inline-block;
 }
 #header #nav .depth2 { 
+    width: 90px;
     display: none; text-align: center; padding: 20px 0; 
     color: rgb(0, 0, 0);
     z-index: 99999;
     position: absolute; left: 0%;
     /* z-index:;를 적용하려면 포지션을 함께 써야한다. */
 }
-#header #nav li:hover .depth2 { display: block; width: 90px; }
+#header #nav li.on .depth2 { display: block; }
 #header #nav .depth2 > li {
     background: rgb(255, 255, 255); padding: 19px 0; opacity: 1;
 }
