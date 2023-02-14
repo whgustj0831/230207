@@ -27,14 +27,14 @@ body { overflow-x: hidden; }
 #header #nav { 
     position: absolute; top: 60%; right: 3%;
 }
-#header .depth1 > li { float: left; position: relative; border-left: 1px solid #000; padding: 0 25px;}
+#header .depth1 > li { float: left; border-left: 1px solid #000; padding: 0 40px; position: relative;}
 #header .depth1 > li:nth-child(1) { border-left: none;}
 #hwader .depth1 > li > a { 
     display: inline-block;
 }
 #header #nav .depth2 { 
-    width: 90px;
-    display: none; text-align: center; padding: 20px 0; 
+    width: 119px;
+    display: none; text-align: center; padding: 16.5px 0; 
     color: rgb(0, 0, 0);
     z-index: 99999;
     position: absolute; left: 0%;
