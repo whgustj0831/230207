@@ -6,3 +6,17 @@ $('.article1 .slide_group').slick({
     prevArrow:'<button class="slick-prev slick-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
     nextArrow:'<button class="slick-next slick-arrow"><i class="fa-solid fa-chevron-right"></i></button>',
 })
+$('.slide_group1').slick({
+    slidesToShow:3,
+    autoplay:true,
+    autoplaySpeed:2000,
+    prevArrow:false,
+    nextArrow:false,
+    centerMode:true,
+    responsive:[{ 
+        breakpoint:1025,
+        settings:{
+            slidesToShow: 3,
+        }
+     }]
+})

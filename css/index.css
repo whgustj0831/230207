@@ -9,14 +9,14 @@
 }
 .article1 .slide1 { background-image: url(../img/1.jpg);}
 .article1 .slide2 { background-image: url(../img/2.jpg);}
-.article1 .slide3 { background-image: url(../img/3.png);}
+.article1 .slide3 { background-image: url(../img/3.jpg);}
 .article1 .text { position:absolute; top:50%; left:0%;
     transform:translateY(-50%); width:100%; 
     text-align:center; 
     color:#fff;
 }
 .article1 .text h2 { 
-    font-size: 35px; font-weight: bold; 
+    font-size: 45px; font-weight: bold; 
     transform: translateY(-100%); opacity: 0;
     transition: all 0.5s 0.6s;
 }
@@ -24,7 +24,7 @@
     transform: translateY(0%); opacity: 1;
 }
 .article1 .text p { 
-    font-size: 15px; padding-top: 30px;
+    font-size: 25px; padding-top: 30px;
     transform: translateY(100%); opacity: 0;
     transition: all 0.5s 0.6s;
 }
@@ -50,12 +50,108 @@
 }
 .article1 .slick-dots li.slick-active button { background-color: #fff; }
 
-.article2 {
-    margin-top: 100px;
+
+.article2 { margin-top: 100px; }
+.article2 .asdf {
+    width: 100%;
+    margin: 5.2%;
 }
 .article2 .colb {
-    border: 1px solid #000;
     display: inline-block;
-    width: 20%;
-    text-align: center;
+    width: 22%; 
 }
+.article2 .imgb {
+    height: 100px;
+    background-size: cover;
+    overflow: hidden;
+}
+.article2 .imgb1 { background-image: url(../img/b\ \(1\).jpg);}
+.article2 .imgb2 { background-image: url(../img/b\ \(2\).jpg);}
+.article2 .imgb3 { background-image: url(../img/b\ \(3\).jpg);}
+.article2 .imgb4 { background-image: url(../img/b\ \(4\).jpg);}
+.article2 .textb {
+    text-align: center;
+    padding: 20px 10px; 
+}
+.article2 .textb h2 { font-size: 18px; font-weight: bold; }
+.article2 .textb p { padding: 15px 0; }
+.article2 .textb a { 
+    /* border-top: 1px solid #000; */
+    border: 1px solid #aaa; color: #777;
+    margin: 1px; padding: 3px 10px;
+}
+.article2 .textb a:hover { font-weight: bold;}
+
+
+.article3 { margin: 100px auto;}
+.article3 .imgd { width: 100%; height: 330px; background-color: #333; }
+.article3 .slide { height: 330px; background-size: cover; background-position: center; }
+.article3 .slide1 { background-image: url(../img/dd\ \(1\).jpg);}
+.article3 .slide2 { background-image: url(../img/dd\ \(2\).jpg);}
+.article3 .slide3 { background-image: url(../img/dd\ \(4\).jpg);}
+.article3 .slide { margin:0 10px; transform:scale(0.85);
+    transition:all 0.5s; opacity:0.3
+}
+.article3 .slide.slick-active { opacity:1 }
+.article3 .slide.slick-active.slick-center.slick-current {
+    transform:scale(1)
+}
+
+.article4 {
+    margin: 180px 5% 0 5%;
+    width: 90%; height: 250px;
+    background: url(../img/img.png) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.article4 div { 
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+}
+.article4 div > h2 { 
+    font-size: 40px; font-weight: bold; 
+    text-shadow: 0 3px 4px #ddd;
+}
+.article4 div > p { 
+    padding: 30px; word-break:keep-all; font-size: 20px; 
+    text-shadow: 0 3px 3px #eee;
+}
+.article4 div > a { border-top: 1px solid #eee; font-size: 20px; }
+.article4 div > a:hover { font-weight: bold; }
+
+.article5 { margin-top: 180px; }
+.article5 .bgc { width: 100%; height: 400px; background-color: rgb(250, 250, 250); position: relative; }
+/* .article5 .boxc { display: inline-block; padding: 40px 100px; text-align: center; } */
+.article5 .boxc { position: absolute; left: 29%; top: 10%; text-align: center; }
+.article5 .box1 { 
+    /* width: 300px; height: 150px;  */
+    /* border: 1px solid #000;  */
+    width: 400px; height: 150px;
+    margin-bottom: 20px; padding: 8% 10px;
+    background: #222;
+    color: #fff;
+}
+.article5 .box2 { 
+    /* width: 300px; height: 150px; */
+    width: 400px; height: 150px;
+    border: 2px solid #222; 
+    padding: 8% 10px;
+    background-color: rgb(250, 250, 250);
+}
+.article5 .boxc .box1 > i { font-size: 30px; }
+.article5 .boxc .box2 > i { font-size: 30px; }
+.article5 .boxc .box1 > h3 { font-size: 20px; padding-top: 10px; }
+.article5 .boxc .box2 > h3 { font-size: 20px; padding-top: 10px; }
+.article5 .boxc .box1 > p { font-size: 15px; padding-top: 10px; }
+.article5 .boxc .box2 > p { font-size: 15px; padding-top: 10px; }
+
+.article5 .boxd { position: absolute; top: 10%; right: 20.5%; }
+.article5 .boxd > ul { 
+    width: 600px; height: 320px; background: #fff; 
+    padding: 13%; text-align: center;
+}
+.article5 .boxd > ul > li { font-size: 25px; } 
+.article5 .boxd > ul > h3 { font-size: 50px; font-weight: bold; padding-top: 30px;} 
+.article5 .boxd > ul > p { font-size: 18px; color: #777; padding-top: 30px; }

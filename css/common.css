@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+body { overflow-x: hidden; }
 #header .top {
     max-width: 100%; margin: 0 auto; padding: 0; 
     background: #000;
@@ -23,7 +24,7 @@
     position: relative;
 }
 #header #nav { 
-    position: absolute; top: 30%; right: 10%;
+    position: absolute; top: 30%; right: 3%;
 }
 #header .depth1 > li { float: left; position: relative; border-left: 1px solid #000; padding: 0 25px;}
 #header .depth1 > li:nth-child(1) { border-left: none;}
@@ -42,5 +43,38 @@
     background: rgb(255, 255, 255); padding: 19px 0; opacity: 1;
 }
 #header #nav .depth2 > li:hover {
-    background: rgb(0, 0, 0); color: rgb(255, 255, 255); opacity: 0.5;
+    background: rgba(0, 0, 0, 0.3); color: rgb(255, 255, 255);
 }
+
+#footer { 
+    width: 100%; height: 350px;
+    background: #222; padding: 35px 0px; 
+    text-align: center; line-height: 18px;
+    color:#ddd;
+}
+#footer .row { padding: 55px 0; word-break:keep-all;}
+#footer .privacy > a { 
+    border-right: 1px solid #fff; padding: 0 10px;
+    font-size: 18px; color: #fff;
+}
+#footer .privacy > a:nth-child(4) { border-right: none; }
+#footer .info { font-size: 15px; padding: 30px 20px; color: #ccc; }
+#footer .info address > span { border-right: 1px solid #fff; padding: 0 8px 0 4px;}
+#footer .info address > span:last-child { border-right: none; }
+#footer .info > p { padding-top: 8px; }
+#footer .sns a { display:inline-block;
+    width:35px; height:35px; border-radius:50%;
+    background:rgba(255,255,255,0.1);
+    font-size:16px; line-height:35px; margin:0 5px;
+    transition:all 0.3s
+}
+#footer .sns a:hover {
+    background:rgba(255,255,255,0.3);
+}
+/* 
+    네비게이션 애니메이션
+    섹션 아티클 스크롤 이벤트
+    로딩창
+    팝업창()
+    아티클 반응형<
+ */
