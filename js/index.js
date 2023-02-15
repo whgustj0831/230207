@@ -25,7 +25,7 @@ $('#header .close').on('click', function(){
 
 $('.article1 .slide_group').slick({
     autoplay:true,
-    autoplaySpeed:3000,
+    autoplaySpeed:4000,
     dots:true,
     arrows:true,
     pauseOnFocus:false,
@@ -35,7 +35,7 @@ $('.article1 .slide_group').slick({
 $('.slide_group1').slick({
     slidesToShow:3,
     autoplay:true,
-    autoplaySpeed:2000,
+    autoplaySpeed: 3500,
     prevArrow:false,
     nextArrow:false,
     centerMode:true,
@@ -48,5 +48,51 @@ $('.slide_group1').slick({
      }]
 })
 
+$('.logo a').click(function(){
+    $('html').animate({
+        scrollTop:'0'
+    }, 500)
+    return false
+})
+
 // 스크롤 이벤트(애니메)
-// 팝업(...)
+
+// let article2Near = $('.article2 .asdf').offset().top - $(window).height()/2
+
+// $(window).on('scroll', function(){
+//     let sct = $(this).scrollTop()
+//     if (sct>=article2Near) {
+//         $('.article2 .asdf').addClass('on')
+//     } else {
+//         $('.article2 .asdf').removeClass('on')
+//     }
+// })
+
+// $(window).on('load', function(){
+    
+//     if ( !sessionStorage.getItem('refresh') ) {
+//         sessionStorage.setItem('refresh', 'yes')
+//         let count = 0;
+//         let timer = setInterval(add, 25)
+//         function add() {
+//             count++
+//             if (count>=100) { 
+//                 clearInterval(timer) 
+//                 $('.introAni').animate({
+//                     left:'-100%'
+//                 }, 500, function(){
+//                     $(this).addClass('on')
+//                 })
+//             }
+//             $('.introAni div').eq(1).text(count+'%')
+//         }
+//     } else {
+//         $('.introAni').addClass('on')
+//     }
+
+//     $('html').animate({
+//         scrollTop:0
+//     }, 100)
+
+// })
+// 뭐가 문젤까 ㅋㅋ 퍼 자서 모르겟넹~

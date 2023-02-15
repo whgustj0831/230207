@@ -61,8 +61,9 @@ body { overflow-x: hidden; }
 }
 #footer .privacy > a:nth-child(4) { border-right: none; }
 #footer .info { font-size: 15px; padding: 30px 20px; color: #ccc; }
-#footer .info address > span { border-right: 1px solid #fff; padding: 0 8px 0 4px;}
-#footer .info address > span:last-child { border-right: none; }
+#footer .info address p { display: inline-block; }
+#footer .info address span { border-right: 1px solid #fff; padding: 0 8px 0 4px;}
+#footer .info address span:last-child { border-right: none; }
 #footer .info > p { padding-top: 8px; }
 #footer .sns a { display:inline-block;
     width:35px; height:35px; border-radius:50%;

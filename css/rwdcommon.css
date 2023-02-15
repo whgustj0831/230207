@@ -1,9 +1,28 @@
 @charset "utf-8";
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1360px) {
+    #footer .info address p { display: block; }
+}
+
+@media screen and (max-width: 800px) {
+
+    #header { max-width: 750px; position: relative; }
+    #header .top {
+        width: 100%; margin: 0 auto; padding: 0; 
+        background: #000;
+        text-align: right;
+        font-size: 12px; color: #fff;
+        position: fixed;
+        z-index: 99999999999999;
+    }
+    #header .logo { 
+        padding: 10px 50px; display: inline-block;
+    }
+    #header a { padding: 5px; }
 
     #header .row { position: relative; overflow: hidden;}
 
+    /* 네비 */
     #header .open { 
         display: block; 
         position:absolute; top: 53%;
@@ -18,7 +37,7 @@
         transition:all 0.5s;
         cursor: pointer;
     }
-    #header.on .close { right: 27px; }
+    #header.on .close { right: 5%; }
 
     #header .row #nav {
         position:fixed; 
@@ -35,8 +54,8 @@
     }
     #header #nav .depth1 {
         position:absolute; right:0; top:0;
-        width:200px; height:100%; 
-        background:#fff; 
+        width: 100%; height: 55%;
+        background:rgb(250, 250, 250);
         padding-top: 80px; 
     }
     #header #nav .depth1 > li { float:none; border: none; position: relative; }
@@ -47,7 +66,7 @@
     }
     #header #nav .depth2 { 
         position:static; top:100%; left:0; 
-        width:100%; 
+        width: 100%; padding: 5px 0; 
         color:#fff; background:rgb(0, 0, 0);
         text-align:center; 
         font-size:14px; 
@@ -55,9 +74,19 @@
     }
     #header #nav li:hover .depth2 { display: block; width: 100%; }
     #header #nav .depth2 > li {
-        background: #000; color: #fff; opacity: 1;
+        background: #000; color: #fff; opacity: 1; padding: 15px 0; 
     }
     #header #nav .depth2 > li:hover {
         background: rgb(255, 255, 255); color: #000; opacity: 1;
+    }
+
+    #footer { 
+        width: 100%; height: 500px;
+        background: #222; padding: 35px 0px; 
+        text-align: center; line-height: 18px;
+        color:#ddd;
+    }
+    #footer .info address span { 
+        border-right: 1px solid #fff; padding: 0 8px 0 4px; display: block; border: none;
     }
 }
